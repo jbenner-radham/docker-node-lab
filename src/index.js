@@ -1,3 +1,5 @@
 'use strict';
 
-console.log('Hello world!');
+const mongoose = require('mongoose');
+
+console.log('Hello world!', typeof mongoose);
