@@ -8,7 +8,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install --assume-yes --no-install-recommends yarn \
     && mkdir /srv/app
-WORKDIR /srv/app
-RUN yarn install
 ADD . /srv/app
+WORKDIR /srv/app
+RUN yarn install --production
 CMD ["node", "src/index.js"]
