@@ -8,9 +8,7 @@ services:
       - db
     ports:
       - '8080:8080'
-    volumes:
-      - mongostorage:/data/db
   db:
     image: mongo:latest
-volumes:
-  mongostorage:
+    volumes:
+      - ./data/db:/data/db
