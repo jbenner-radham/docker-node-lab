@@ -15,7 +15,12 @@ const kitty = new Cat({name: 'Evil'});
 
 kitty.save().then(() => console.log('Yipee!'))
     .catch(() => console.error('Boo!'))
-    .then(() => mongoose.disconnect());
+    .then(() => {
+        Cat.findOne({name: 'Evil'})
+            .then(cat => console.log(`Found ${cat.name} the cat!`))
+            .catch(() => console.error(`Couldn't find the cat :(`))
+            .then(() => mongoose.disconnect());
+    });
 
 process.on('SIGINT', () => {
     mongoose.disconnect().then(() => {
