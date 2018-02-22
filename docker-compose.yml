@@ -11,4 +11,6 @@ services:
   db:
     image: mongo:latest
     volumes:
-      - ./data/db:/data/db
+      - db_data:/data/db
+volumes:
+  db_data:
