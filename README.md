@@ -8,6 +8,12 @@ Usage
 $ docker-compose build && docker-compose run app
 ```
 
+Cleaning Up
+-----------
+```sh
+$ docker-compose down && docker volume prune
+```
+
 See Also
 --------
 * [Yarn — Installation](https://yarnpkg.com/en/docs/install#linux)
