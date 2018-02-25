@@ -10,7 +10,7 @@
   "author": "James Benner <james.benner@gmail.com> (http://www.jamesbenner.com/)",
   "license": "MIT",
   "dependencies": {
-    "@becquerel/framework": "^0.3.0",
+    "@becquerel/framework": "0.4.0-beta.3",
     "mongoose": "^5.0.6"
   },
   "private": true

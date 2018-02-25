@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@becquerel/framework@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@becquerel/framework/-/framework-0.3.0.tgz#aa036fd63b4a58a9d2d31f5601e43ecf77f2e423"
+"@becquerel/framework@0.4.0-beta.3":
+  version "0.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@becquerel/framework/-/framework-0.4.0-beta.3.tgz#6ce1ad40a98733987ae71fccf95da1e8b2060780"
 
 async@2.1.4:
   version "2.1.4"
@@ -26,9 +26,9 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-kareem@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.0.4.tgz#8e648733c1e45b7d5ca1cf36c364e2787f895ced"
+kareem@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.0.5.tgz#437e1e40f1be304ee21b3e4790eb3a05418b35ca"
 
 lodash.get@4.4.2:
   version "4.4.2"
@@ -56,12 +56,12 @@ mongoose-legacy-pluralize@1.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
 
 mongoose@^5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.0.6.tgz#ce4ba0eaf83dd343dec266f733858fbbbfbbe7a7"
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.0.7.tgz#7c20a3c734ef4e8999f150e5a48e97dfa3f06951"
   dependencies:
     async "2.1.4"
     bson "~1.0.4"
-    kareem "2.0.4"
+    kareem "2.0.5"
     lodash.get "4.4.2"
     mongodb "3.0.2"
     mongoose-legacy-pluralize "1.0.2"

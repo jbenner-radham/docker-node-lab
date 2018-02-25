@@ -5,7 +5,7 @@ A personal lab for experimenting with Docker, Node, and friends.
 Usage
 -----
 ```sh
-$ docker-compose build && docker-compose run app
+$ docker-compose build && docker-compose up
 ```
 
 Cleaning Up
