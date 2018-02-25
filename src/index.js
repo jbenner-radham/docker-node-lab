@@ -13,13 +13,8 @@ app.route('/', {
     get: async (request, response) => {
         mongoose.connect(url);
 
-        try {
-            const kitty = new Cat({name: 'Evil'});
-            const results = await Cat.find({name: kitty.name});
-            response.json = {results};
-        } catch (error) {
-            response.json = JSON.stringify(error);
-        }
+        const results = await Cat.find({name: 'Evil'});
+        response.json = {results};
 
         mongoose.disconnect();
     }
@@ -29,6 +24,5 @@ app.run();
 
 process.on('SIGINT', async () => {
     await mongoose.disconnect();
-    console.log('Mongo disconnected.');
     process.exit(0);
 });
